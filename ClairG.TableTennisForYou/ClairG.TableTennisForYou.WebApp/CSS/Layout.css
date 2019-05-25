@@ -17,6 +17,7 @@
 /*RenderBody*/
 #bodybox {
     background: url(../../Images/background.jpg) no-repeat fixed;
+    margin-top:-30px;
 }
 #bodybox > #bodycontent {
     padding: 0 200px;
