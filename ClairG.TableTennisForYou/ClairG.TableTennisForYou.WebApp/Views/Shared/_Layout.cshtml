@@ -9,26 +9,10 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
     <link href="~/CSS/reset.css" rel="stylesheet" />
-    <style type="text/css">
-        /*logo*/
-        #logo img {
-            margin-top:20px;
-            height: 109px;
-            width: 400px;
-        }
-        /*navbar*/
-        #mainnav ul li a{
-            color: black;
-            font-weight: bold;
-            font-size:16px;
-        }
-        /*link hover*/
-        #mainnav ul li a:hover {
-            color: deeppink;
-        }
-    </style>
+    <link href="~/CSS/Layout.css" rel="stylesheet" />
 </head>
 <body>
+    <!--header-->
     <div class="container">
         <!--logo-->
         <div id="logo">
@@ -39,12 +23,13 @@
         <!--navbar-->
         <nav id="mainnav" class="navbar navbar-default" role="navigation">
             <ul class="nav nav-tabs nav-justified">
-                <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("News", "Index", "Home")</li>
                 <li role="presentation" class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         Events <span class="caret"></span>
                     </a>
+                    <!--dropdowns-->
                     <ul class="dropdown-menu" id="subnav">
                         <li role="presentation">@Html.ActionLink("Monthly Event", "Index", "Home")</li>
                         <li role="presentation">@Html.ActionLink("ITTF World Tour", "Index", "Home")</li>
@@ -60,9 +45,14 @@
             </ul>
         </nav>
     </div>
-
+    <!--content-->
+    <div id="bodybox">
+        <div id="bodycontent">
+            @RenderBody()
+        </div>
+    </div>
+    <!--footer-->
     <div class="container body-content">
-        @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Table Tennis For You</p>

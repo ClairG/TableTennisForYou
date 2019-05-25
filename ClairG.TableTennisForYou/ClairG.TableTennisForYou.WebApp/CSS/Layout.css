@@ -1,0 +1,23 @@
+﻿/*logo*/
+#logo img {
+    margin-top: 20px;
+    height: 109px;
+    width: 400px;
+}
+/*navbar*/
+#mainnav ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+/*link hover*/
+#mainnav ul li a:hover {
+    color: deeppink;
+}
+/*RenderBody*/
+#bodybox {
+    background: url(../../Images/background.jpg) no-repeat fixed;
+}
+#bodybox > #bodycontent {
+    padding: 0 200px;
+}
