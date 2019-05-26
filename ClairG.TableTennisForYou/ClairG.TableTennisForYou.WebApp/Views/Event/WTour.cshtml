@@ -3,42 +3,118 @@
     ViewBag.Title = "ITTF World Tour";
 }
 
-<link href="~/CSS/Events.css" rel="stylesheet" />
-<style type="text/css">
-    .eventNav {
-        margin-top: 10px;
-        border-top: 1px solid lightblue;
-        border-bottom: 1px solid lightblue;
-    }
-    .eventNav ul{
-        margin-top: 10px;        
-    }
-    .eventNav ul li{
-        float:left;
-        font: 14px arial,verdana;   
-        margin-bottom:10px;
-    }
-    .eventNav ul li a {
-        padding: 0 15px;
-        border-right: 1px solid lightblue;
-    }
-    .eventNav ul li:last-child a{
-        border:none;
-    }
-    .eventNav ul li a:hover{
-        text-decoration:none;
-        color:lightblue;
-    }
-</style>
-<div class="eventHeader">
+<link href="~/CSS/Event.css" rel="stylesheet" />
+<script type="text/javascript"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(function () {
+        $(".thumbnail a").mouseenter(function () { $(this).addClass("hoverMaker"); })
+        $(".thumbnail a").mouseleave(function () { $(this).removeClass("hoverMaker"); })
+    });
+</script>
+
+<div class="eventHeader ">
     <h1>Seamaster 2019 ITTF World Tour</h1>
 </div>
 <div class="container-fluid eventNav">
     <ul>
-        <li>@Html.ActionLink("News","Wtour","Event")</li>
-        <li>@Html.ActionLink("Media", "Wtour", "Event")</li>
-        <li>@Html.ActionLink("Documents", "Wtour", "Event")</li>
-        <li>@Html.ActionLink("World Tour Standings", "Wtour", "Event")</li>
+        <li>@Html.ActionLink("News", "WTour", "Event")</li>
+        <li>@Html.ActionLink("Media", "WTour", "Event")</li>
+        <li>@Html.ActionLink("Documents", "WTour", "Event")</li>
+        <li>@Html.ActionLink("World Tour Standings", "WTour", "Event")</li>
     </ul>
 </div>
+<div class="whitebackground eventBody">
+    <!--1st row-->
+    <div class="row">
+        <!--left box-->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Wtour","Event")">
+                    <img src="~/Images/Events/WTour0.jpg" alt="Where to Watch" />
+                    <div class="caption">
+                        <h3>Seamaster 2019 ITTF World Tour - Where to Watch<span class="showArrow"></span></h3>
+                        <p>
+                            Catch the Seamaster 2019 ITTF World Tour Hungarian Open LIVE on TV and streaming! Worldwide: itTV (Online only, subject to...
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--middle box-->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Wtour","Event")">
+                    <img src="~/Images/Events/WTour1.png" alt="Where to Watch" />
+                    <div class="caption">
+                        <h3>Events<span class="showArrow"></span></h3>
+                        <p>
+                            Seamaster 2019 World Tour Platinum Qatar Open, Doha: 28-31 March, Qualification 26-27 March China Open, Shenzhen: 30 May - 2...
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--right box-->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Wtour","Event")">
+                    <img src="~/Images/Events/WTour2.jpg" alt="Where to Watch" />
+                    <div class="caption">
+                        <h3>Documents<span class="showArrow"></span></h3>
+                        <p>
+                            Important Documents Seamaster 2019 ITTF World Tour - Prize Money * Seamaster 2019 ITTF World Tour - Event Information Map ...
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--2nd row-->
+    <div class="row">
+        <!--left box-->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Wtour","Event")">
+                    <img src="~/Images/Events/WTour3.jpg" alt="Where to Watch" />
+                    <div class="caption">
+                        <h3>News<span class="showArrow"></span></h3>
+                        <p>
+                            Read More...    
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--middle box-->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Wtour","Event")">
+                    <img src="~/Images/Events/WTour4.jpg" alt="Where to Watch" />
+                    <div class="caption">
+                        <h3>Media<span class="showArrow"></span></h3>
+                        <p>
+                            For all your media questions and requests relating to the Seamaster 2019 ITTF World Tour, please contact ITTF Promotions Manager Caifeng...
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--right box-->
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Wtour","Event")">
+                    <img src="~/Images/Events/WTour5.jpg" alt="Where to Watch" />
+                    <div class="caption">
+                        <h3>World Tour Standings<span class="showArrow"></span></h3>
+                        <p>                            
+                            Check out the top 16 players currently in the qualification positions (Q) for the Seamaster 2019 World Tour Grand Finals: After Qatar...
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height:20px;"></div>
 

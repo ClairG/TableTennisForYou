@@ -1,0 +1,98 @@
+﻿/*header*/
+.eventHeader {
+    margin-top: 10px;
+}
+
+    .eventHeader h1 {
+        color: darkgreen;
+        font: bold 25px arial,verdana;
+    }
+
+/*monthly event*/
+.eventMonth h2 {
+    font: bold 18px arial,verdana;
+    margin-top: 20px;
+}
+
+.eventMonth ul {
+    padding-left: 40px;
+    font: 14px arial,verdana;
+    list-style: square;
+}
+
+    .eventMonth ul li {
+        line-height: 25px;
+    }
+
+/*Event Nabar*/
+.eventNav {
+    margin-top: 10px;
+    border-top: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+}
+
+    .eventNav ul {
+        margin-top: 10px;
+    }
+
+        .eventNav ul li {
+            float: left;
+            font: 14px arial,verdana;
+            margin-bottom: 10px;
+        }
+
+            .eventNav ul li a {
+                padding: 0 15px;
+                border-right: 1px solid lightblue;
+            }
+
+            .eventNav ul li:last-child a {
+                border: none;
+            }
+
+            .eventNav ul li a:hover {
+                text-decoration: none;
+                color: lightblue;
+            }
+
+/*Event Body*/
+.eventBody {
+    margin-top: 10px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+    .eventBody .thumbnail {
+        border: none;
+    }
+
+        .eventBody .thumbnail a {
+            text-decoration: none;
+        }
+
+        .eventBody .thumbnail h3 {
+            color: darkgreen;
+            font: bold 18px arial,verdana;
+            padding-right: 30px;
+            position: relative;
+        }
+
+        .eventBody .thumbnail p {
+            font-size: 12px;
+            font-family: arial,verdana;
+        }
+
+        /*show arrow*/
+        .eventBody .thumbnail h3 .showArrow {
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            background: url('../../Images/hoverMaker.png'), no-repeat;
+            height: 15px;
+            width: 15px;
+            display: none;
+        }
+
+        .eventBody .thumbnail .hoverMaker .showArrow {
+            display: block;
+        }
