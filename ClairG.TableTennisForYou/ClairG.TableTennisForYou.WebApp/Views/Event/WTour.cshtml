@@ -1,7 +1,44 @@
 ﻿
 @{
-    ViewBag.Title = "WTour";
+    ViewBag.Title = "ITTF World Tour";
 }
 
-<h2>WTour</h2>
+<link href="~/CSS/Events.css" rel="stylesheet" />
+<style type="text/css">
+    .eventNav {
+        margin-top: 10px;
+        border-top: 1px solid lightblue;
+        border-bottom: 1px solid lightblue;
+    }
+    .eventNav ul{
+        margin-top: 10px;        
+    }
+    .eventNav ul li{
+        float:left;
+        font: 14px arial,verdana;   
+        margin-bottom:10px;
+    }
+    .eventNav ul li a {
+        padding: 0 15px;
+        border-right: 1px solid lightblue;
+    }
+    .eventNav ul li:last-child a{
+        border:none;
+    }
+    .eventNav ul li a:hover{
+        text-decoration:none;
+        color:lightblue;
+    }
+</style>
+<div class="eventHeader">
+    <h1>Seamaster 2019 ITTF World Tour</h1>
+</div>
+<div class="container-fluid eventNav">
+    <ul>
+        <li>@Html.ActionLink("News","Wtour","Event")</li>
+        <li>@Html.ActionLink("Media", "Wtour", "Event")</li>
+        <li>@Html.ActionLink("Documents", "Wtour", "Event")</li>
+        <li>@Html.ActionLink("World Tour Standings", "Wtour", "Event")</li>
+    </ul>
+</div>
 

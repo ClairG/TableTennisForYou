@@ -1,0 +1,25 @@
+﻿/*header*/
+.eventHeader {
+    margin-top: 10px;
+}
+
+.eventHeader h1 {
+    color: darkgreen;
+    font: bold 25px arial,verdana;
+}
+
+/*monthly event*/
+.eventMonth h2 {
+    font: bold 18px arial,verdana;
+    margin-top: 20px;
+}
+
+.eventMonth ul {
+    padding-left: 40px;
+    font: 14px arial,verdana;
+    list-style: square;
+}
+
+.eventMonth ul li {
+    line-height: 25px;
+}
