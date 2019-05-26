@@ -1,0 +1,47 @@
+﻿/*banner*/
+#banner h3 {
+    font: bold 22px arial,verdana;
+}
+
+#banner p {
+    font: bold 16px arial,verdana;
+}
+/*link style*/
+a {
+    color: black;
+}
+
+    a:hover {
+        color: deeppink;
+        text-decoration: none;
+    }
+/*News & Videos & Events*/
+.thumbnail > h2 {
+    padding-top: 10px;
+    font: bold 20px arial,verdana;
+}
+
+.thumbnail h3 {
+    font-weight: bold;
+}
+
+.media-body {
+    padding-top: 10px;
+    font: bold 14px arial,verdana;
+}
+
+.media {
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+#eventList > li {
+    line-height: 23px;
+    list-style: circle;
+    margin-left: 20px;
+    font-family: arial, verdana;
+}
+
+#eventList {
+    padding-bottom: 48px;
+}
