@@ -4,6 +4,32 @@
 }
 
 <link href="~/CSS/HomePage.css" rel="stylesheet" />
+<script type="text/javascript"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(function () {
+        //photoGallery-autoPlay
+        var offset = 0;
+        var timer;
+        function autoPlay() {
+            timer = setInterval(function () {
+                offset += -10;
+                //7 pictures
+                if (offset <= -1540) {
+                    offset = 0;
+                }
+                $("#photoGallery > ul").css("marginLeft", offset);
+            }, 100);
+        }
+        autoPlay();
+        //mouseenter/mouseleave
+        $("#photoGallery li").hover(function () {
+            clearInterval(timer);
+        }, function () {
+            autoPlay();
+        })
+    });
+</script>
 
 <!--Carousel-->
 <div id="banner" class="carousel slide" data-ride="carousel">
@@ -65,7 +91,7 @@
 <!--News & Videos & Events-->
 <div class="row">
     <!--News-->
-    <div class="col-sm-6 col-md-4">        
+    <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
             <h2>@Html.ActionLink("Latest News", "Index", "Home")</h2>
             <!--First News-->
@@ -183,5 +209,53 @@
                 <li>ITTF African Para Championships, Alexandria (EGY): 30 Jun – 3 Jul</li>
             </ul>
         </div>
+    </div>
+</div>
+
+<!--Photo Gallery-->
+<div id="bottombox">
+    <h1>Photo Gallery</h1>
+    <div id="photoGallery">
+        <ul>
+            @*1-5*@
+            <li>
+                <img src="~/Images/banner0.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/banner3.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/banner4.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/news1.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/news2.jpg" />
+            </li>
+            @*6-7*@
+            <li>
+                <img src="~/Images/photoGallery1.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/photoGallery2.jpg" />
+            </li>
+            @*1-5*@
+            <li>
+                <img src="~/Images/banner0.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/banner3.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/banner4.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/news1.jpg" />
+            </li>
+            <li>
+                <img src="~/Images/news2.jpg" />
+            </li>
+        </ul>
     </div>
 </div>
