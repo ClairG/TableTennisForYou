@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Table Tennis For You</title>
+    <link href="~/CSS/reset.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />*@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
-    <link href="~/CSS/reset.css" rel="stylesheet" />
+
     <link href="~/CSS/Layout.css" rel="stylesheet" />
 </head>
 <body>
@@ -31,7 +32,7 @@
                     </a>
                     <!--dropdowns-->
                     <ul class="dropdown-menu" id="subnav">
-                        <li role="presentation">@Html.ActionLink("Monthly Event", "MEvent", "Event")</li>
+                        <li role="presentation">@Html.ActionLink("2019 Event Calendar", "MEvent", "Event")</li>
                         <li role="presentation">@Html.ActionLink("ITTF World Tour", "WTour", "Event")</li>
                         <li role="presentation">@Html.ActionLink("World Champions", "WChampions", "Event")</li>
                         <li role="presentation">@Html.ActionLink("Tokyo 2020", "Tokyo", "Event")</li>
