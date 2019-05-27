@@ -94,7 +94,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jquery-1.11.3.min.js" />
     <Content Include="Content\Site.css" />
+    <Content Include="CSS\E.css" />
     <Content Include="CSS\Event.css" />
+    <Content Include="CSS\Events.css" />
     <Content Include="CSS\HomePage.css" />
     <Content Include="CSS\Layout.css" />
     <Content Include="CSS\reset.css" />
@@ -115,6 +117,9 @@
     <Content Include="Images\banner2.jpeg" />
     <Content Include="Images\banner3.jpg" />
     <Content Include="Images\banner4.jpg" />
+    <Content Include="Images\Events\brand0.png" />
+    <Content Include="Images\Events\brand1.png" />
+    <Content Include="Images\Events\brand2.png" />
     <Content Include="Images\Events\WTour0.jpg" />
     <Content Include="Images\Events\WTour1.png" />
     <Content Include="Images\Events\WTour2.jpg" />

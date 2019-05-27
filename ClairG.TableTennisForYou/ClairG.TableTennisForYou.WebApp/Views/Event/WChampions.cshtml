@@ -1,7 +1,78 @@
-﻿
+﻿ 
 @{
     ViewBag.Title = "World Champions";
 }
 
-<h2>WChampions</h2>
+<link href="~/CSS/Events.css" rel="stylesheet" />
+
+<div class="eventHeader">
+    <h1>World Championships</h1>
+</div>
+
+<div class="container-fluid eventNav">
+    <ul>
+        <li>@Html.ActionLink("Event Information", "WTour", "Event")</li>
+        <li>@Html.ActionLink("News", "WTour", "Event")</li>
+        <li>@Html.ActionLink("Videos", "WTour", "Event")</li>
+    </ul>
+</div>
+
+<div class="container-fluid">
+    <!--adress & time-->
+    <div class="eventSubTitle">
+        <h2>21 to 28 April 2019</h2>
+        <h2>Budapest, Hungary</h2>
+    </div>
+    <!--Draws & Results-->
+    <div class="eventSubTitle">
+        <h2>Draws & Results</h2>
+        <ul>
+            <li><a href="#">Live Scoring</a></li>
+            <li><a href="#">Daily Schedule</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Knock-outs</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Entries</a></li>
+        </ul>
+    </div>
+    <!--Tickets-->
+    <div class="eventSubTitle">
+        <h2>Tickets</h2>
+        <ul>
+            <li><a href="#">Tickets on sale – click here!</a></li>
+        </ul>
+    </div>
+    <!--Photos-->
+    <div class="eventSubTitle">
+        <h2>
+            Photos
+        </h2>
+        <ul>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Draw</a></li>
+            <li><a href="#">Training Days</a></li>
+            <li><a href="#">Day 1</a></li>
+            <li><a href="#">Day 2</a></li>
+            <li><a href="#">Day 3</a></li>
+            <li><a href="#">Day 4</a></li>
+            <li><a href="#">Day 5</a></li>
+            <li><a href="#">Day 6</a></li>
+            <li><a href="#">Day 7</a></li>
+            <li><a href="#">Day 8</a></li>
+        </ul>
+    </div>
+    <!--Schedule-->
+    <div class="eventSubTitle">
+        <h2>
+            Schedule
+        </h2>
+        <ul>
+            <li><a href="#">General Schedule ( Hall 1 – 4 Tables )</a></li>
+            <li><a href="#">General Schedule ( 32 Tables )</a></li>
+            <li><a href="#">International TV Schedule Schedule</a></li>
+
+        </ul>
+    </div>
+</div>
+
 

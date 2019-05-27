@@ -97,7 +97,7 @@
             display: block;
         }
 
-        /*subTitles*/
+/*subTitles*/
 .eventSubTitle h2 {
     color: darkgreen;
     font: bold 18px arial,verdana;
@@ -109,3 +109,42 @@
     padding-left: 30px;
     font: 14px arial,verdana;
 }
+
+/*Tokyo 2020*/
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+    #wrap .eventInfo {
+        width: 60%;
+        height: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        float: left;
+    }
+
+        #wrap .eventInfo small {
+            font: italic 10px arial,verdana;
+        }
+
+    #wrap .sponser {
+    }
+
+        #wrap .sponser .brand {
+            width: 10%;
+            padding-left: 20px;
+            float: left;
+        }
+
+        #wrap .sponser span {
+            font: 14px arial,verdana;
+            color: gray;
+            margin: 0 auto;
+        }
+
+        #wrap .sponser img {
+            margin: 0 auto;
+            width: 70px;
+        }
